@@ -21,6 +21,8 @@ s3transfer==0.1.10
 six==1.10.0
 ```
 
+For both scripts, AWS credentials will be used from `~/.aws/credentials` per the default behaviour of the `awscli` package and the `boto3` package, respectively.
+
 ### Using the Bash Version
 
 1. Clone the repository, or just save the `src/main/bash/DescribePublicBuckets.sh` file locally.
@@ -56,3 +58,7 @@ $ pip install -r requirements.txt
 ```bash
 $ python src/main/python/describe_public_buckets.py
 ```
+
+### Problems
+
+Please open an Issue on [this Github repository](https://github.com/jgreenemi/DescribePublicBuckets/issues) if you run into any problems.
