@@ -21,7 +21,7 @@ s3transfer==0.1.10
 six==1.10.0
 ```
 
-For both scripts, AWS credentials will be used from `~/.aws/credentials` per the default behaviour of the `awscli` package and the `boto3` package, respectively.
+For both scripts, AWS credentials will be used from `~/.aws/credentials` per the default behaviour of the `awscli` package and the `boto3` package, respectively. If you wish to use an alternate means of loading credentials for the Python script, please [consult the Boto 3 documentation](http://boto3.readthedocs.io/en/latest/guide/configuration.html) for the options available to you.
 
 ### Using the Bash Version
 
@@ -53,6 +53,10 @@ $ git clone https://github.com/jgreenemi/DescribePublicBuckets.git
 $ virtualenv env
 $ source env/bin/activate
 $ pip install -r requirements.txt
+```
+1. If you haven't yet configured your AWS CLI credentials, do so now.
+```bash
+$ aws configure
 ```
 1. Now run the script and review the results.
 ```bash
