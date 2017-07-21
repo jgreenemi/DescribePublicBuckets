@@ -1,17 +1,19 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+# describe_public_buckets
+# A Python script to use Boto3 to list out any AWS S3 buckets in your account that have public access based on their
+# ACLs, either Read or Write permissions.
+
 import boto3
 import logging
 import sys
 
 from pprint import pprint
 
-# describe_public_buckets
-# A Python script to use Boto3 to list out any AWS S3 buckets in your account that have public access based on their
-# ACLs, either Read or Write permissions.
-#
-
 
 def describe_public_buckets():
-    '''
+    """
     Search your AWS account for S3 buckets that have public READ and WRITE permissions.
     The returned dictionary looks something like the following:
 
@@ -22,7 +24,7 @@ def describe_public_buckets():
 
     :return: A dictionary with keys consisting of permission names, and values as a list of buckets that have that permission.
     :rtype: dict
-    '''
+    """
 
     # Set up logger. Feel free to change the logging format or add a FileHandler per your needs.
     logformat = ('%(asctime)s %(levelname)s [%(name)s] %(message)s')
