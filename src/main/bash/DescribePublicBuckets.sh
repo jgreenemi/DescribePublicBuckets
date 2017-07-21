@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
+
 # DescribePublicBuckets
 # A script using the AWS CLI to determine if any S3 buckets in your account are using Public ACLs.
 #
