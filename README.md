@@ -27,7 +27,7 @@ For both scripts, AWS credentials will be used from `~/.aws/credentials` per the
 
 1. Clone the repository, or just save the `src/main/bash/DescribePublicBuckets.sh` file locally.
 ```bash
-$ wget -O https://github.com/jgreenemi/DescribePublicBuckets/raw/master/src/main/bash/DescribePublicBuckets.sh
+$ wget https://github.com/jgreenemi/DescribePublicBuckets/raw/master/src/main/bash/DescribePublicBuckets.sh
 ```
 1. Give the file executable permissions.
 ```bash
