@@ -34,7 +34,7 @@ def describe_public_buckets():
     logger.info('Starting.')
 
     public_acl_indicator = 'http://acs.amazonaws.com/groups/global/AllUsers'
-    permissions_to_check = ['READ', 'WRITE']
+    permissions_to_check = ['READ', 'WRITE', 'FULL_CONTROL']
     public_buckets = {}
 
     try:
